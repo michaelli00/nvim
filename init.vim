@@ -26,7 +26,7 @@ Plug 'lervag/vimtex'
 Plug 'tpope/vim-fugitive'
 Plug 'lervag/vimtex'
 Plug 'sirver/ultisnips'
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
 Plug 'haya14busa/incsearch.vim'
 

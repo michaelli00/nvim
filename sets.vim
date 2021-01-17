@@ -7,6 +7,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set ignorecase
+set nohlsearch
 "allow swapping buffers w/o saving"
 set hidden
 set noerrorbells

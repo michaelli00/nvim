@@ -9,6 +9,7 @@ source $HOME/.config/nvim/plugin/ultisnips.vim
 source $HOME/.config/nvim/plugin/vimtex.vim
 source $HOME/.config/nvim/plugin/vimspector.vim
 source $HOME/.config/nvim/plugin/incsearch.vim
+source $HOME/.config/nvim/plugin/vimmarkdown.vim
 
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
@@ -29,6 +30,8 @@ Plug 'sirver/ultisnips'
 " Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
 Plug 'haya14busa/incsearch.vim'
+Plug 'epilande/vim-react-snippets'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/async.vim'

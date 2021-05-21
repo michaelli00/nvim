@@ -16,8 +16,6 @@ Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'voldikss/vim-floaterm'
 Plug 'machakann/vim-highlightedyank'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-system-copy'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
@@ -32,6 +30,10 @@ Plug 'szw/vim-maximizer'
 Plug 'haya14busa/incsearch.vim'
 Plug 'epilande/vim-react-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/async.vim'

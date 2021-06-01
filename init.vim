@@ -11,7 +11,7 @@ source $HOME/.config/nvim/plugin/vimspector.vim
 source $HOME/.config/nvim/plugin/incsearch.vim
 source $HOME/.config/nvim/plugin/vimmarkdown.vim
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged/')
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'voldikss/vim-floaterm'

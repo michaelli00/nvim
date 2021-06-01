@@ -1,2 +1,2 @@
 "fzf find"
-nnoremap <leader>f :GFiles<CR>
+nnoremap <leader>f :Files<CR>

@@ -1,6 +1,3 @@
-syntax on
-filetype plugin on
-
 set encoding=utf-8
 set tabstop=2 softtabstop=2
 set shiftwidth=2
@@ -13,10 +10,10 @@ set hidden
 set noerrorbells
 set scrolloff=8
 set signcolumn=yes
-set colorcolumn=80
+set colorcolumn=100
 
 "Line number"
-set nu 
+set nu
 set relativenumber
 set smartcase
 

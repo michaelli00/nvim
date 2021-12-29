@@ -1,76 +1,68 @@
-source $HOME/.config/nvim/sets.vim
-source $HOME/.config/nvim/plugin/floatterm.vim
-source $HOME/.config/nvim/plugin/fzf.vim
-source $HOME/.config/nvim/plugin/git.vim
-source $HOME/.config/nvim/plugin/lsp.vim
-source $HOME/.config/nvim/plugin/NERDTree.vim
-source $HOME/.config/nvim/plugin/ripgrep.vim
-source $HOME/.config/nvim/plugin/ultisnips.vim
-source $HOME/.config/nvim/plugin/vimtex.vim
-source $HOME/.config/nvim/plugin/vimspector.vim
-source $HOME/.config/nvim/plugin/incsearch.vim
-source $HOME/.config/nvim/plugin/vimmarkdown.vim
+syntax on
+filetype plugin on
+" remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 call plug#begin('~/.config/nvim/plugged/')
+" UI
 Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'voldikss/vim-floaterm'
+
+" Quality of Life
+Plug 'haya14busa/incsearch.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'christoomey/vim-system-copy'
-Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug '9mm/vim-closer'
+
+" Navigation
 Plug 'preservim/nerdtree'
-Plug 'lervag/vimtex'
-Plug 'tpope/vim-fugitive'
-Plug 'lervag/vimtex'
-Plug 'sirver/ultisnips'
-" Plug 'puremourning/vimspector'
-Plug 'szw/vim-maximizer'
-Plug 'haya14busa/incsearch.vim'
-Plug 'epilande/vim-react-snippets'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/async.vim'
-Plug 'ncm2/ncm2'
-Plug 'ncm2/ncm2-vim-lsp'
-Plug 'roxma/nvim-yarp'
-Plug 'mattn/vim-lsp-settings'
+" lsp/treesitter
+Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+
+
+" git
+Plug 'tpope/vim-fugitive'
+
+" Notetaking
+Plug 'lervag/vimtex'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
 
+"gruvbox dark with black background"
 colorscheme gruvbox
 set bg=dark
-
-"black background"
 highlight Normal ctermbg=NONE
-let g:gruvbox_transparent_bg = 1
 
 "yellow line numbers"
-highlight LineNr ctermfg=yellow
+highlight LineNr ctermfg=cyan
 
 let mapleader = " "
 
-"space space exits out of insert mode"
-imap <leader><SPACE> <ESC>
+source $HOME/.config/nvim/sets.vim
+source $HOME/.config/nvim/mappings.vim
 
-"take visual lines and move then up or down"
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
-
-"tab swap"
-nnoremap <leader><Tab> <C-^>
-
-"window split movement"
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
-
-"window resize"
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+" source $HOME/.config/nvim/plugin/completion.vim
+source $HOME/.config/nvim/plugin/floatterm.vim
+source $HOME/.config/nvim/plugin/gruvbox.vim
+source $HOME/.config/nvim/plugin/incsearch.vim
+source $HOME/.config/nvim/plugin/lspconfig.vim
+source $HOME/.config/nvim/plugin/lspsaga.vim
+source $HOME/.config/nvim/plugin/lualine.lua
+source $HOME/.config/nvim/plugin/NERDTree.vim
+source $HOME/.config/nvim/plugin/telescope.vim
+source $HOME/.config/nvim/plugin/treesitter.vim
+source $HOME/.config/nvim/plugin/ultisnips.vim
+source $HOME/.config/nvim/plugin/vimtex.vim
+source $HOME/.config/nvim/plugin/vimmarkdown.vim
+source $HOME/.config/nvim/plugin/web-devicons.vim

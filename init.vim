@@ -1,4 +1,4 @@
-syntax on
+" syntax on
 filetype plugin on
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
@@ -34,6 +34,9 @@ Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 " git
 Plug 'tpope/vim-fugitive'
 
+" snippets
+Plug 'SirVer/ultisnips'
+
 " Notetaking
 Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -52,14 +55,11 @@ let mapleader = " "
 source $HOME/.config/nvim/sets.vim
 source $HOME/.config/nvim/mappings.vim
 
-" source $HOME/.config/nvim/plugin/completion.vim
-source $HOME/.config/nvim/plugin/floatterm.vim
+source $HOME/.config/nvim/plugin/completion.vim
 source $HOME/.config/nvim/plugin/gruvbox.vim
-source $HOME/.config/nvim/plugin/incsearch.vim
 source $HOME/.config/nvim/plugin/lspconfig.vim
 source $HOME/.config/nvim/plugin/lspsaga.vim
 source $HOME/.config/nvim/plugin/lualine.lua
-source $HOME/.config/nvim/plugin/NERDTree.vim
 source $HOME/.config/nvim/plugin/telescope.vim
 source $HOME/.config/nvim/plugin/treesitter.vim
 source $HOME/.config/nvim/plugin/ultisnips.vim

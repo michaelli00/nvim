@@ -25,3 +25,21 @@ nnoremap Y y$
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
+
+"floaterm
+let g:floaterm_keymap_new    = '<F7>'
+let g:floaterm_keymap_prev   = '<F8>'
+let g:floaterm_keymap_next   = '<F9>'
+let g:floaterm_keymap_toggle = '<F12>'
+
+"incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+
+"nerdtree
+nnoremap <leader>t :NERDTreeFind<CR>
+
+"telescope
+nnoremap <leader>f :Telescope find_files<CR>
+nnoremap <Leader>rg :Telescope live_grep<CR>
+nnoremap <Leader>b :Telescope buffers<CR>

@@ -14,6 +14,50 @@ snippet beg "begin/end tags" i
 \end{$1}
 endsnippet
 
-snippet // "Fraction" i
+snippet frac "Fraction" i
 \\frac{$1}{$2}$0
+endsnippet
+
+snippet nk "n choose k" i
+\displaystyle {$1 \choose $2}$0
+endsnippet
+
+snippet sum "sum" i
+\sum_{$1}^{$2}$0
+endsnippet
+
+snippet nl "new line" i
+&nbsp;
+
+endsnippet
+
+snippet table "table" i
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+endsnippet
+
+snippet L "mathcal l" i
+\mathcal{L}(V, W)
+endsnippet
+
+snippet P "mathcal p" i
+\mathcal{P}(R)
+endsnippet
+
+snippet M "mathcal m" i
+\mathcal{M}(T)
+endsnippet
+
+snippet set "empty set" i
+\\{$1\\}$2
+endsnippet
+
+snippet mn "m-by-n matrix" i
+$m$-by-$n$ matrix
+endsnippet
+
+snippet matvect "matrix vector space" i
+Mat$_{x \times n}(K)$
 endsnippet

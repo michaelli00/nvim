@@ -14,7 +14,8 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-commentary'
-Plug '9mm/vim-closer'
+Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
 
 " Navigation
 Plug 'preservim/nerdtree'
@@ -30,6 +31,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
+" Racket
+Plug 'wlangstroth/vim-racket'
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -66,3 +69,4 @@ source $HOME/.config/nvim/plugin/ultisnips.vim
 source $HOME/.config/nvim/plugin/vimtex.vim
 source $HOME/.config/nvim/plugin/vimmarkdown.vim
 source $HOME/.config/nvim/plugin/web-devicons.vim
+source $HOME/.config/nvim/plugin/rainbow.vim

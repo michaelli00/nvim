@@ -7,4 +7,7 @@ vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
 
 -- Load the colorscheme
 vim.cmd[[colorscheme tokyonight]]
-vim.cmd[[highlight LineNr ctermfg=cyan]]
+
+-- Current line color is cyan, other lines are yellow
+vim.cmd[[highlight LineNr guifg=yellow]]
+vim.cmd[[highlight CursorLineNr guifg=cyan]]

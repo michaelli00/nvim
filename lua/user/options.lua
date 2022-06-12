@@ -36,10 +36,6 @@ opt.undofile = true                         -- enable persistent undo
 opt.updatetime = 300                        -- faster completion (4000ms default)
 opt.wrap = true                             -- wrap lines
 
--- Current line color is cyan, other lines are yellow
-vim.cmd[[highlight LineNr guifg=yellow]]
-vim.cmd[[highlight CursorLineNr guifg=cyan]]
-
 -- Remove all whitespace on save
 vim.cmd[[autocmd BufWritePre * :%s/\s\+$//e]]
 

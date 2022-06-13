@@ -13,7 +13,7 @@ null_ls.setup {
   debug = false,
   sources = {
     -- Javascript
-    formatting.prettier.with { extra_args = { "--single-quote", "--jsx-single-quote" } },
+    formatting.prettier.with { extra_args = { "--single-quote", "--jsx-single-quote" , "--arrow-parens avoid"} },
 
     -- Python
     formatting.black.with { extra_args = { "--fast" } },

@@ -107,10 +107,14 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"                       -- Toggleterm
 
   -- Which Key
-  use "folke/which-key.nvim"                          -- Helps with keybind mappings
+  -- use "folke/which-key.nvim"                          -- Helps with keybind mappings
 
   -- Vimtex
   use 'lervag/vimtex'                                 -- Support LaTeX compilation in vim
+
+  -- Impatient
+  use 'lewis6991/impatient.nvim'                      -- Used to make nvim load faster
+
 
   -- Load on an autocommand event
   -- Matchup

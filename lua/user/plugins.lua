@@ -103,8 +103,8 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- Toggleterm
-  use "akinsho/toggleterm.nvim"                       -- Toggleterm
+  -- Floatterm
+  use 'voldikss/vim-floaterm'                         -- Floatterm
 
   -- Which Key
   -- use "folke/which-key.nvim"                          -- Helps with keybind mappings

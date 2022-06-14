@@ -30,14 +30,20 @@ keymap("n", "<C-h>", ":vertical resize -2<CR>", opts)
 keymap("n", "<leader><Tab>", "<C-^>", opts)
 
 -- Telescope
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>rg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>f", "<CMD>Telescope find_files<CR>", opts)
+keymap("n", "<leader>rg", "<CMD>Telescope live_grep<CR>", opts)
 
 -- Nvim Tree
 keymap("n", "<leader>t", ":NvimTreeToggle<cr>", opts)
 
 -- Yank rest of the line
 keymap("n", "Y", "y$", opts)
+
+-- Floatterm
+vim.g.floaterm_keymap_new    = '<F7>'
+vim.g.floaterm_keymap_prev   = '<F8>'
+vim.g.floaterm_keymap_next   = '<F9>'
+vim.g.floaterm_keymap_toggle = '<F12>'
 
 
 ---- Insert Mode ----

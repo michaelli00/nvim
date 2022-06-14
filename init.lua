@@ -13,6 +13,6 @@ require "user.comment"
 require "user.gitsigns"
 require "user.nvim-tree"
 require "user.lualine"
-require "user.toggleterm"
+require "user.floatterm"
 require "user.impatient"
 -- require "user.which-key"   -- TODO get which-key working

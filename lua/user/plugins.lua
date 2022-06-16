@@ -115,6 +115,9 @@ return packer.startup(function(use)
   -- Impatient
   use 'lewis6991/impatient.nvim'                      -- Used to make nvim load faster
 
+  -- Tetris :)
+  use 'alec-gibson/nvim-tetris'                       -- Tetris
+
 
   -- Load on an autocommand event
   -- Matchup

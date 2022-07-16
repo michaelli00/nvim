@@ -47,7 +47,8 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'                  -- Useful icons for nvim
 
   -- Colorschemes
-  use 'folke/tokyonight.nvim'                         -- tokyonight color scheme
+  use 'ellisonleao/gruvbox.nvim'
+
 
   -- Vim Highlighted Yank
   use 'machakann/vim-highlightedyank'                 -- Highlight yanked text
@@ -64,8 +65,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"                          -- lsp completions
   use "hrsh7th/cmp-nvim-lua"                          -- lua config completion
 
-  -- snippets
-  use "L3MON4D3/LuaSnip"                              -- snippet engine
+  -- Snippets
+  use "L3MON4D3/LuaSnip"                              -- Snippet engine
   use "rafamadriz/friendly-snippets"                  -- a bunch of snippets to use
 
   -- LSP

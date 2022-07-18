@@ -15,4 +15,5 @@ require "user.nvim-tree"
 require "user.lualine"
 require "user.floatterm"
 require "user.impatient"
+require "user.ultisnips"
 -- require "user.which-key"   -- TODO get which-key working

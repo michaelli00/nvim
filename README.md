@@ -2,8 +2,6 @@
 
 Config is based on https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ with some minor tweaks
 
-All of it was written in lua
-
 Requirements:
 
 - Hack Nerd Font https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack

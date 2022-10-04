@@ -62,9 +62,9 @@ vim.keymap.set('n', '<leader>f', builtin.find_files, {})
 vim.keymap.set('n', '<leader>rg', builtin.live_grep, {})
 
 -- Tree
-vim.keymap.set("n", "<leader>t", vim.cmd.NERDTreeFind)
+vim.keymap.set("n", "<leader>t", ":NERDTreeFind<CR>")
 
 -- Undo Tree
-vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+vim.keymap.set('n', '<leader>u', ":UndotreeToggle<CR>")
 
 -- LSP mappings are written in /after/plugin/lsp.lua
